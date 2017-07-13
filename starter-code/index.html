@@ -21,12 +21,12 @@
 
     -->
     <script id="article-template" type="text/x-handlebars-template">
-
-      <article data-catagory="{{category}}"></article>
+      <article data-category="{{category}}" data-author="{{author}}">
           <header>
             <h1>{{title}}</h1>
             <div class="byline">
               By <address> <a href="{{authorUrl}}">{{author}}</a></address>
+              published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
             </div>
           </header>
           <section class="article-body">{{{body}}}</section>
@@ -90,7 +90,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- TODO:DONE Include Handlebars.JS from a CDN -->
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js'></script>
     <script src="scripts/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>

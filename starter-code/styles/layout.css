@@ -15,7 +15,20 @@
 .heading-group-h1 {
   max-width: 80%;
 }
+.article-body{
+  clear: both;
+  overflow: hidden;
+  outline: 1px solid black;
+}
+.article-body img{
+  max-width: 25%;
+  max-height: 10%;
+  padding: 20px;
 
+}
+.article-body p{
+  max-width: 66%;
+}
 #filters select {
   width: 90%;
   margin: .2em 5%;
